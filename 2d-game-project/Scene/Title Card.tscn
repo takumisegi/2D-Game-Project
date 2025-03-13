@@ -1,9 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dauvkj44diq2"]
 
-[ext_resource type="Texture2D" uid="uid://das57d65ehwbc" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Title-V01.png" id="1_pmia5"]
+[ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="1_vrftg"]
 
 [node name="TitleCard" type="Node2D"]
 
-[node name="DeepSeaPanic-assets-title-v01" type="Sprite2D" parent="."]
-position = Vector2(-5, -4)
-texture = ExtResource("1_pmia5")
+[node name="DeepSeaPanic-assets-title-v01" parent="." instance=ExtResource("1_vrftg")]

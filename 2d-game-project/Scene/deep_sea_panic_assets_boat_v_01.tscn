@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://7gwf3y32qlkr"]
+
+[ext_resource type="Texture2D" uid="uid://bgdo8xdgolcmf" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Boat-V01.png" id="1_lw8gu"]
+
+[node name="DeepSeaPanic-assets-boat-v01" type="Sprite2D"]
+texture = ExtResource("1_lw8gu")
