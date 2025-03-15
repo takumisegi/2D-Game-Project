@@ -16,18 +16,18 @@ script = ExtResource("1_1dp74")
 [node name="Start Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 493.0
-offset_top = 263.0
+offset_top = 219.0
 offset_right = 662.0
-offset_bottom = 336.0
+offset_bottom = 292.0
 theme = SubResource("Theme_pk72d")
 text = "Start"
 
 [node name="Quit Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 493.0
-offset_top = 372.0
+offset_top = 325.0
 offset_right = 662.0
-offset_bottom = 445.0
+offset_bottom = 398.0
 theme = SubResource("Theme_pk72d")
 text = "Quit"
 
