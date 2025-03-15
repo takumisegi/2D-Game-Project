@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfa4xprjjm1ug"]
+
+[ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_1dp74"]
+
+[sub_resource type="Theme" id="Theme_pk72d"]
+
+[node name="Title Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1dp74")
+
+[node name="Start Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 263.0
+offset_right = 662.0
+offset_bottom = 336.0
+theme = SubResource("Theme_pk72d")
+text = "Start"
+
+[node name="Quit Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 372.0
+offset_right = 662.0
+offset_bottom = 445.0
+theme = SubResource("Theme_pk72d")
+text = "Quit"
+
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Quit Button" to="." method="_on_quit_button_pressed"]
