@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bypmpkedj4obm"]
-
-[ext_resource type="Texture2D" uid="uid://heip1sdq0ou7" path="res://Assets/star.webp" id="1_1c4o1"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Star" type="Sprite2D" parent="."]
-scale = Vector2(0.140816, 0.140816)
-texture = ExtResource("1_1c4o1")
