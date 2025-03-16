@@ -6,20 +6,20 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-offset_left = 475.0
+offset_left = 452.0
 offset_top = 445.0
 offset_right = 602.0
-offset_bottom = 500.0
+offset_bottom = 510.0
 theme_override_fonts/font = ExtResource("1_byf3j")
 theme_override_font_sizes/font_size = 24
 text = "Start"
 
 [node name="Button2" type="Button" parent="."]
 texture_filter = 1
-offset_left = 627.0
+offset_left = 615.0
 offset_top = 445.0
 offset_right = 681.0
-offset_bottom = 499.0
+offset_bottom = 511.0
 theme_override_fonts/font = ExtResource("1_byf3j")
 theme_override_font_sizes/font_size = 21
 text = " ？
