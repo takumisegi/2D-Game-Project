@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy6eme7a0g0l8"
-path="res://.godot/imported/DeepSeaPanic-Assets-Fish-V01 (2).png-286415f08ad6abcb93c9824d16882260.ctex"
+uid="uid://cg2ratw4txv4e"
+path="res://.godot/imported/DeepSeaPanic-Assets-Cliff.png-114f566eba144d091f04f08504fc7afd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ascii Art/DeepSeaPanic-Assets-Fish-V01 (2).png"
-dest_files=["res://.godot/imported/DeepSeaPanic-Assets-Fish-V01 (2).png-286415f08ad6abcb93c9824d16882260.ctex"]
+source_file="res://Assets/Ascii Art/DeepSeaPanic-Assets-Cliff.png"
+dest_files=["res://.godot/imported/DeepSeaPanic-Assets-Cliff.png-114f566eba144d091f04f08504fc7afd.ctex"]
 
 [params]
 
