@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://gxru3rj12316"]
+[gd_scene load_steps=14 format=3 uid="uid://gxru3rj12316"]
 
 [ext_resource type="FontFile" uid="uid://cq8c0hubi0f0j" path="res://Assets/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf" id="1_byf3j"]
+[ext_resource type="Script" path="res://Scene/begin_screen.gd" id="1_xgqua"]
 [ext_resource type="Texture2D" uid="uid://47gaw1tb1l2c" path="res://Assets/button/TutorialButton.png" id="2_bo6pa"]
-[ext_resource type="Script" path="res://Scene/tutorial_button.gd" id="2_n8mih"]
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_pjaoi"]
 [ext_resource type="Texture2D" uid="uid://o4p3l7tu8mlx" path="res://Assets/button/StartButton.png" id="3_ntm4v"]
-[ext_resource type="Script" path="res://Scene/start_button.gd" id="4_g87lj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfvem"]
 
@@ -13,13 +12,41 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7kmbk"]
 
+[sub_resource type="GDScript" id="GDScript_7wfku"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0i3x"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wi0we"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q0kyd"]
 
+[sub_resource type="GDScript" id="GDScript_2t62d"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_xgqua")
 
 [node name="tutorial Button" type="Button" parent="."]
 texture_filter = 1
@@ -35,7 +62,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_02su4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_7kmbk")
 text = " ？
 "
-script = ExtResource("2_n8mih")
+script = SubResource("GDScript_7wfku")
 
 [node name="TutorialButton" type="Sprite2D" parent="tutorial Button"]
 position = Vector2(32, 33)
@@ -51,7 +78,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_g0i3x")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_wi0we")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_q0kyd")
 text = "Start"
-script = ExtResource("4_g87lj")
+script = SubResource("GDScript_2t62d")
 
 [node name="StartButton" type="Sprite2D" parent="Start Button"]
 position = Vector2(75, 31)
@@ -61,3 +88,6 @@ texture = ExtResource("3_ntm4v")
 [node name="DeepSeaPanic-assets-title-v01" parent="." instance=ExtResource("2_pjaoi")]
 texture_filter = 2
 position = Vector2(577, 281)
+
+[connection signal="pressed" from="tutorial Button" to="." method="_on_tutorial_button_pressed"]
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
