@@ -12,11 +12,11 @@ extends Control
 
 
 
-func _on_start_button_pressed():
+func _on_start_Button_pressed():
 	get_tree().change_scene_to_file("res://Scene/main scene.tscn")
 	pass # Replace with function body.
 
 
-func _on_quit_button_pressed():
-	get_tree().quit()
+func _on_tutorial_Button_pressed():
+	get_tree().change_scene_to_file("res://Scene/Tutorial.tscn")
 	pass # Replace with function body.
