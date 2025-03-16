@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dwf24h215b7qx"]
 
 [ext_resource type="Texture2D" uid="uid://cqmi1p4usmvyq" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-HowTo-V01.png" id="1_062d6"]
-[ext_resource type="Script" path="res://Scene/tutorial.gd" id="1_gug3m"]
+[ext_resource type="Script" path="res://Scripts/tutorial.gd" id="1_gug3m"]
 [ext_resource type="FontFile" uid="uid://cnm6t1ve2fgik" path="res://Assets/IBM_Plex_Mono/IBMPlexMono-Regular.ttf" id="2_kaeaa"]
 [ext_resource type="Texture2D" uid="uid://b773f6it6aih6" path="res://Assets/button/QuitButton.png" id="3_hvdo6"]
 

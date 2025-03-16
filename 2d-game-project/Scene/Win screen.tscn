@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr26g8g3vvac5"]
+
+[ext_resource type="Script" path="res://Scripts/win_screen.gd" id="1_1ig11"]
+[ext_resource type="Texture2D" uid="uid://bn8wpgprygxg4" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-YouWin!-V01.png" id="1_ftdyn"]
+[ext_resource type="Texture2D" uid="uid://3c3ai3okscud" path="res://Assets/button/Yeah!Button.png" id="2_2ngss"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1ig11")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 217.0
+offset_top = 134.0
+offset_right = 946.0
+offset_bottom = 506.0
+
+[node name="DeepSeaPanic-assets-youWin!-v01" type="Sprite2D" parent="ColorRect"]
+texture_filter = 2
+position = Vector2(364, 114)
+texture = ExtResource("1_ftdyn")
+
+[node name="YeahButton" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 243.0
+offset_right = 420.0
+offset_bottom = 297.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Yeah!button" type="Sprite2D" parent="ColorRect/YeahButton"]
+position = Vector2(66.2939, 26.9375)
+scale = Vector2(0.0812229, 0.0812229)
+texture = ExtResource("2_2ngss")
+
+[connection signal="pressed" from="ColorRect/YeahButton" to="." method="_on_yeah_button_pressed"]

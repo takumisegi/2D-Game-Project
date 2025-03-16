@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://nqi3vacitidp"]
+
+[ext_resource type="Script" path="res://Scripts/Lose screen.gd" id="1_pmpsv"]
+[ext_resource type="Texture2D" uid="uid://kye65k8piepe" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-YouLose!-V01.png" id="2_g4m62"]
+[ext_resource type="Texture2D" uid="uid://130i46m4oysg" path="res://Assets/button/TryAgainButton.png" id="3_c1ubh"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_pmpsv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 217.0
+offset_top = 134.0
+offset_right = 946.0
+offset_bottom = 506.0
+
+[node name="DeepSeaPanic-assets-youLose!-v01" type="Sprite2D" parent="ColorRect"]
+texture_filter = 2
+position = Vector2(370, 115)
+texture = ExtResource("2_g4m62")
+
+[node name="TryAgainButton" type="Button" parent="ColorRect"]
+offset_left = 290.0
+offset_top = 243.0
+offset_right = 420.0
+offset_bottom = 297.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TryAgainButton" type="Sprite2D" parent="ColorRect/TryAgainButton"]
+position = Vector2(66, 27)
+scale = Vector2(0.0813954, 0.0813954)
+texture = ExtResource("3_c1ubh")
+
+[connection signal="pressed" from="ColorRect/TryAgainButton" to="." method="_on_try_again_button_pressed"]
