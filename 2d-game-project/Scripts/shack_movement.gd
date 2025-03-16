@@ -9,13 +9,14 @@ var direction = 1
 @onready var shack_sprite = $"DeepSeaPanic-assets-shark-v01"
 
 func _process(delta):
-	position.x += direction * Speed * delta
 	if ray_cast_left.is_colliding():
 		direction = 1
 		shack_sprite.flip_h = false
 	if ray_cast_right.is_colliding():
 		direction = -1
 		shack_sprite.flip_h = true
+		
+	position.x += direction * Speed * delta
 		
 		
 	move_and_slide()

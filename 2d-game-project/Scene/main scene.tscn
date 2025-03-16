@@ -21,13 +21,13 @@ position = Vector2(565, 326)
 position = Vector2(0, 0)
 
 [node name="Player" parent="." instance=ExtResource("3_te4iv")]
-position = Vector2(486, 504)
+position = Vector2(384, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(579, 974)
+position = Vector2(576, 324)
 
 [node name="shack" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(171, 738)
+position = Vector2(147, 65)
 
 [node name="shack2" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(533, 902)
+position = Vector2(539, 182)
