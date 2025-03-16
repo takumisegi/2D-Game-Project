@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dy53xenth3aa4"]
 
-[ext_resource type="Script" path="res://Scripts/shack_movement.gd" id="1_b0wj8"]
+[ext_resource type="Script" path="res://Scripts/shack_movement.gd" id="1_37mt0"]
 [ext_resource type="Texture2D" uid="uid://bbux3dmt0q5ub" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Shark-V01.png" id="2_2wqx7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76hkr"]
@@ -8,8 +8,7 @@ radius = 21.0
 height = 134.0
 
 [node name="shack" type="CharacterBody2D"]
-position = Vector2(-104, -154)
-script = ExtResource("1_b0wj8")
+script = ExtResource("1_37mt0")
 
 [node name="DeepSeaPanic-assets-shark-v01" type="Sprite2D" parent="."]
 position = Vector2(188, 201)
@@ -19,3 +18,11 @@ texture = ExtResource("2_2wqx7")
 position = Vector2(187, 201)
 rotation = 4.71239
 shape = SubResource("CapsuleShape2D_76hkr")
+
+[node name="RayCast right" type="RayCast2D" parent="."]
+position = Vector2(187, 199)
+target_position = Vector2(80, 1)
+
+[node name="RayCast left" type="RayCast2D" parent="."]
+position = Vector2(187, 199)
+target_position = Vector2(-79, 0)

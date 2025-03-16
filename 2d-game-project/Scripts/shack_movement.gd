@@ -1,23 +1,21 @@
 extends CharacterBody2D
 
+const Speed = 100
 
-var speed = 60
+var direction = 1
 
-var facing_right = true
+@onready var ray_cast_right = $"RayCast right"
+@onready var ray_cast_left = $"RayCast left"
+@onready var shack_sprite = $"DeepSeaPanic-assets-shark-v01"
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+func _process(delta):
+	position.x += direction * Speed * delta
+	if ray_cast_left.is_colliding():
+		direction = -1
+		shack_sprite.flip_h = true
+	if ray_cast_left.is_colliding():
+		direction = 1
+		shack_sprite.flip_h = false
 		
-	velocity.x = speed
+		
 	move_and_slide()
-
-func flip():
-	facing_right = !facing_right
-	
-	scale.x = abs(scale.x) * -1
-	if facing_right:
-		speed = abs(speed)
-	else:
-		speed = abs(speed) * -1
