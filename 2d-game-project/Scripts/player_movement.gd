@@ -37,3 +37,9 @@ func die():
 func _on_hazarddetector_body_entered(body):
 	if body.is_in_group("hazards"):
 		die()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group("hazards"):
+		print("lose")
+		get_tree().change_scene_to_file("res://Scene/Lose screen.tscn")
