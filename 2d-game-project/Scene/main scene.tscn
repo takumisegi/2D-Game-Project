@@ -44,7 +44,7 @@ position = Vector2(329, 667)
 position = Vector2(631, 595)
 
 [node name="Shark 7" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(155, 514)
+position = Vector2(155, 516)
 
 [node name="Shark 3" parent="." instance=ExtResource("4_q3gtr")]
 position = Vector2(188, 886)
