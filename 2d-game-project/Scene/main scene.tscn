@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shark right movement.tscn" id="4_q3gtr"]
 [ext_resource type="Texture2D" uid="uid://cafqpd7k76ns8" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Treasure-V01.png" id="6_y4toj"]
 [ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="7_jyibr"]
-[ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/deep_sea_panic_assets_treasure_v_01.tscn" id="8_n1gkw"]
+[ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/treasure.tscn" id="8_n1gkw"]
 [ext_resource type="PackedScene" uid="uid://dtv84mvlsymov" path="res://Scene/shark left movement.tscn" id="9_0cjts"]
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="9_tv7dx"]
 
@@ -14,7 +14,7 @@
 radius = 65.0077
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3whgg"]
-distance = -2333.0
+distance = -2328.0
 
 [node name="Main Scene" type="Node2D"]
 

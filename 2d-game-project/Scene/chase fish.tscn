@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://drdjrot6b63ns"]
+
+[ext_resource type="Script" path="res://Scripts/enemy_fish.gd" id="1_uraiu"]
+[ext_resource type="Texture2D" uid="uid://c5d4hmr13wlm3" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Fish-V01.png" id="2_d4fyj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6mmbc"]
+height = 68.0001
+
+[node name="enemy fish" type="CharacterBody2D"]
+script = ExtResource("1_uraiu")
+
+[node name="DeepSeaPanic-assets-fish-v01" type="Sprite2D" parent="."]
+position = Vector2(229, 210)
+texture = ExtResource("2_d4fyj")
+region_enabled = true
+region_rect = Rect2(202.61, 234.87, 79.39, 23.912)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(226, 211)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_6mmbc")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
