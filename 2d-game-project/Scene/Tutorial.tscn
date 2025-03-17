@@ -22,7 +22,8 @@ offset_bottom = 488.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_kaeaa")
 text = "Press W, A, S, D to control up, down, left, and right.
-Press SPACE for floating
+Press SPACE to swim up.
+ESC to exit.
 
 Get the treasure from the bottom of the sea!
 Don't hit the reef!
