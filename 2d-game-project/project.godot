@@ -21,6 +21,10 @@ config/icon="res://icon.svg"
 AudioStreamPlayer2d="*res://Scene/8bit main theme.tscn"
 UnderwaterSfx="*res://Scene/UnderwaterSFX.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 ui_left={
