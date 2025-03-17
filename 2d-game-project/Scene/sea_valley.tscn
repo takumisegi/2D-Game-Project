@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://blhf6ieddt3v0"]
+[gd_scene load_steps=4 format=3 uid="uid://ccq1urd1htg8p"]
 
 [ext_resource type="Texture2D" uid="uid://cqmi1p4usmvyq" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-HowTo-V01.png" id="1_kupvs"]
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shack_movement.tscn" id="2_4nicf"]
@@ -14,15 +14,15 @@ rotation = -1.5708
 scale = Vector2(1.04125, 1.04125)
 texture = ExtResource("1_kupvs")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(67, 323)
+shape = SubResource("RectangleShape2D_01nfb")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(65, 273)
 rotation = 4.71239
 scale = Vector2(0.771296, 1.35)
 texture = ExtResource("1_kupvs")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(67, 323)
-shape = SubResource("RectangleShape2D_01nfb")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(1085, 321)

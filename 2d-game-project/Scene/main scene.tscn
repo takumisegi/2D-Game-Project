@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_cn50l"]
 [ext_resource type="PackedScene" uid="uid://bqkhxtgugyc8p" path="res://Scene/character_body_2d.tscn" id="3_te4iv"]
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shack_movement.tscn" id="4_q3gtr"]
-[ext_resource type="Texture2D" uid="uid://cg2ratw4txv4e" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Cliff.png" id="5_3hxmf"]
 [ext_resource type="Texture2D" uid="uid://cafqpd7k76ns8" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Treasure-V01.png" id="6_y4toj"]
 [ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="7_jyibr"]
 [ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/deep_sea_panic_assets_treasure_v_01.tscn" id="8_n1gkw"]
+[ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="9_tv7dx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrlxq"]
 radius = 65.0077
@@ -54,20 +54,6 @@ position = Vector2(152, 1612)
 [node name="Shark 6" parent="." instance=ExtResource("4_q3gtr")]
 position = Vector2(562, 1836)
 
-[node name="Cliff" type="Node2D" parent="."]
-
-[node name="DeepSeaPanic-assets-cliff" type="Sprite2D" parent="Cliff"]
-position = Vector2(543, 1493)
-texture = ExtResource("5_3hxmf")
-
-[node name="DeepSeaPanic-assets-cliff2" type="Sprite2D" parent="Cliff"]
-position = Vector2(563, 1494)
-texture = ExtResource("5_3hxmf")
-
-[node name="DeepSeaPanic-assets-cliff3" type="Sprite2D" parent="Cliff"]
-position = Vector2(592, 1494)
-texture = ExtResource("5_3hxmf")
-
 [node name="DeepSeaPanic-assets-treasure-v01" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(553, 2250)
@@ -89,3 +75,6 @@ shape = SubResource("WorldBoundaryShape2D_3whgg")
 
 [node name="DeepSeaPanic-assets-treasure-v02" parent="." instance=ExtResource("8_n1gkw")]
 position = Vector2(546, 2253)
+
+[node name="marine trench" parent="." instance=ExtResource("9_tv7dx")]
+position = Vector2(1, 656)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dy53xenth3aa4"]
 
-[ext_resource type="Script" path="res://Scripts/shack_movement.gd" id="1_37mt0"]
+[ext_resource type="Script" path="res://Scripts/shark_movement.gd" id="1_37mt0"]
 [ext_resource type="Texture2D" uid="uid://bbux3dmt0q5ub" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Shark-V01.png" id="2_2wqx7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76hkr"]
