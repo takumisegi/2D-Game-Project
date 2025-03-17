@@ -40,6 +40,9 @@ position = Vector2(92, -109)
 [node name="Shark 1" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(329, 667)
 
+[node name="Shark 9" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
+position = Vector2(713, 772)
+
 [node name="Shark 2" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(631, 595)
 
@@ -47,19 +50,28 @@ position = Vector2(631, 595)
 position = Vector2(155, 516)
 
 [node name="Shark 3" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
-position = Vector2(188, 886)
+position = Vector2(116, 886)
 
 [node name="Shark 4" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(281, 1316)
 
+[node name="Shark 11" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
+position = Vector2(444, 1413)
+
 [node name="Shark 5" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
-position = Vector2(363, 1639)
+position = Vector2(207, 1575)
+
+[node name="Shark 8" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
+position = Vector2(421, 1663)
+
+[node name="Shark 12" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
+position = Vector2(642, 1738)
 
 [node name="Shark 6" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(196, 1941)
 
 [node name="Shark 10" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
-position = Vector2(595, 1541)
+position = Vector2(603, 1497)
 
 [node name="DeepSeaPanic-assets-treasure-v01" type="Sprite2D" parent="."]
 visible = false
@@ -87,10 +99,22 @@ position = Vector2(546, 2253)
 position = Vector2(1, 656)
 
 [node name="Shark" parent="." instance=ExtResource("9_0cjts")]
-position = Vector2(516, 972)
+position = Vector2(550, 972)
+
+[node name="Shark5" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(405, 793)
 
 [node name="Shark2" parent="." instance=ExtResource("9_0cjts")]
-position = Vector2(481, 1809)
+position = Vector2(355, 1809)
+
+[node name="Shark7" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(675, 1881)
 
 [node name="Shark3" parent="." instance=ExtResource("9_0cjts")]
 position = Vector2(624, 1207)
+
+[node name="Shark4" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(144, 1051)
+
+[node name="Shark6" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(420, 1154)
