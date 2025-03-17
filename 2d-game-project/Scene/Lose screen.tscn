@@ -19,6 +19,7 @@ position = Vector2(370, 115)
 texture = ExtResource("2_g4m62")
 
 [node name="TryAgainButton" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 290.0
 offset_top = 243.0
 offset_right = 420.0

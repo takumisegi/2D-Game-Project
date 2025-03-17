@@ -14,7 +14,7 @@ position = Vector2(580, 228)
 texture = ExtResource("1_062d6")
 
 [node name="Label" type="Label" parent="."]
-texture_filter = 2
+texture_filter = 1
 offset_left = 316.0
 offset_top = 341.0
 offset_right = 854.0

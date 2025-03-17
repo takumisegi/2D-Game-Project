@@ -7,7 +7,7 @@
 radius = 21.0
 height = 134.0
 
-[node name="shack" type="CharacterBody2D"]
+[node name="Shark" type="CharacterBody2D"]
 script = ExtResource("1_37mt0")
 
 [node name="DeepSeaPanic-assets-shark-v01" type="Sprite2D" parent="."]
