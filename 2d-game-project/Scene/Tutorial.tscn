@@ -21,7 +21,7 @@ offset_right = 854.0
 offset_bottom = 488.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_kaeaa")
-text = "Press W, A, S, D to control up, down, left, and right.
+text = "Press S and D to control left and right.
 Press SPACE to swim up.
 ESC to exit.
 
