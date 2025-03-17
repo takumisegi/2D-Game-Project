@@ -19,7 +19,7 @@ distance = -2333.0
 [node name="Main Scene" type="Node2D"]
 
 [node name="Boat" type="Node2D" parent="."]
-position = Vector2(565, 326)
+position = Vector2(921, 387)
 
 [node name="DeepSeaPanic-assets-boat-v01" parent="Boat" instance=ExtResource("1_cctne")]
 position = Vector2(15.08, 186)

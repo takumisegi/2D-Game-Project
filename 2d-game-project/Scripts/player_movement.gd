@@ -11,9 +11,9 @@ extends CharacterBody2D
 	#move_and_slide()
 	
 
-const SPEED = 150.0
+const SPEED = 100.0
 const SWIM_FORCE = -50.0  # Controls how strong the "jump" is
-const GRAVITY = 2.0  # Controls how fast the diver sinks
+const GRAVITY = 1.0  # Controls how fast the diver sinks
 
 func _physics_process(delta: float): #-> void:
 	velocity.y += GRAVITY #sinking simulation
