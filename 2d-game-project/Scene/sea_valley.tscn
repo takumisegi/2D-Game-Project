@@ -21,7 +21,7 @@ scale = Vector2(0.771296, 1.35)
 texture = ExtResource("1_kupvs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(67, 322.75)
+position = Vector2(67, 323)
 shape = SubResource("RectangleShape2D_01nfb")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
