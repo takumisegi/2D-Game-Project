@@ -5,4 +5,3 @@
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_ieudy")
 autoplay = true
-bus = &"sfx"
