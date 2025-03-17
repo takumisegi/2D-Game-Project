@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://em385xqjon0t"]
+[gd_scene load_steps=10 format=3 uid="uid://em385xqjon0t"]
 
 [ext_resource type="PackedScene" uid="uid://7gwf3y32qlkr" path="res://Scene/deep_sea_panic_assets_boat_v_01.tscn" id="1_cctne"]
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_cn50l"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shack_movement.tscn" id="4_q3gtr"]
 [ext_resource type="Texture2D" uid="uid://cg2ratw4txv4e" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Cliff.png" id="5_3hxmf"]
 [ext_resource type="Texture2D" uid="uid://cafqpd7k76ns8" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Treasure-V01.png" id="6_y4toj"]
+[ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="7_jyibr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrlxq"]
 radius = 65.0077
@@ -23,7 +24,7 @@ position = Vector2(15.08, 186)
 scale = Vector2(1.3, 1.3)
 
 [node name="Title" type="Node2D" parent="."]
-position = Vector2(565, 326)
+position = Vector2(565, 289)
 
 [node name="DeepSeaPanic-assets-title-v01" parent="Title" instance=ExtResource("2_cn50l")]
 position = Vector2(0, 0)
@@ -75,6 +76,9 @@ texture = ExtResource("6_y4toj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeepSeaPanic-assets-treasure-v01/Area2D"]
 position = Vector2(6, -2)
 shape = SubResource("CircleShape2D_xrlxq")
+
+[node name="SFX_Treasure" type="AudioStreamPlayer2D" parent="DeepSeaPanic-assets-treasure-v01"]
+stream = ExtResource("7_jyibr")
 
 [node name="Sea Floor" type="StaticBody2D" parent="."]
 
