@@ -1,12 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://em385xqjon0t"]
+[gd_scene load_steps=12 format=3 uid="uid://em385xqjon0t"]
 
 [ext_resource type="PackedScene" uid="uid://7gwf3y32qlkr" path="res://Scene/deep_sea_panic_assets_boat_v_01.tscn" id="1_cctne"]
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_cn50l"]
 [ext_resource type="PackedScene" uid="uid://bqkhxtgugyc8p" path="res://Scene/character_body_2d.tscn" id="3_te4iv"]
-[ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shack_movement.tscn" id="4_q3gtr"]
+[ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shark right movement.tscn" id="4_q3gtr"]
 [ext_resource type="Texture2D" uid="uid://cafqpd7k76ns8" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Treasure-V01.png" id="6_y4toj"]
 [ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="7_jyibr"]
 [ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/deep_sea_panic_assets_treasure_v_01.tscn" id="8_n1gkw"]
+[ext_resource type="PackedScene" uid="uid://dtv84mvlsymov" path="res://Scene/shark left movement.tscn" id="9_0cjts"]
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="9_tv7dx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrlxq"]
@@ -37,22 +38,25 @@ position = Vector2(484, 433)
 position = Vector2(92, -109)
 
 [node name="Shark 1" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(143, 659)
+position = Vector2(329, 667)
 
 [node name="Shark 2" parent="." instance=ExtResource("4_q3gtr")]
 position = Vector2(631, 595)
 
 [node name="Shark 3" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(152, 964)
+position = Vector2(188, 886)
 
 [node name="Shark 4" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(562, 1347)
+position = Vector2(281, 1316)
 
 [node name="Shark 5" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(152, 1612)
+position = Vector2(363, 1639)
 
 [node name="Shark 6" parent="." instance=ExtResource("4_q3gtr")]
-position = Vector2(562, 1836)
+position = Vector2(196, 1941)
+
+[node name="Shark 10" parent="." instance=ExtResource("4_q3gtr")]
+position = Vector2(595, 1541)
 
 [node name="DeepSeaPanic-assets-treasure-v01" type="Sprite2D" parent="."]
 visible = false
@@ -78,3 +82,15 @@ position = Vector2(546, 2253)
 
 [node name="marine trench" parent="." instance=ExtResource("9_tv7dx")]
 position = Vector2(1, 656)
+
+[node name="Shark" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(516, 972)
+
+[node name="Shark2" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(481, 1809)
+
+[node name="Shark3" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(624, 1207)
+
+[node name="Shark4" parent="." instance=ExtResource("9_0cjts")]
+position = Vector2(136, 528)
