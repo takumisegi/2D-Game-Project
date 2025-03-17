@@ -37,28 +37,28 @@ position = Vector2(484, 433)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(92, -109)
 
-[node name="Shark 1" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 1" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(329, 667)
 
-[node name="Shark 2" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 2" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(631, 595)
 
-[node name="Shark 7" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 7" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(155, 516)
 
-[node name="Shark 3" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 3" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(188, 886)
 
-[node name="Shark 4" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 4" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(281, 1316)
 
-[node name="Shark 5" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 5" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(363, 1639)
 
-[node name="Shark 6" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 6" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(196, 1941)
 
-[node name="Shark 10" parent="." instance=ExtResource("4_q3gtr")]
+[node name="Shark 10" parent="." groups=["hazards"] instance=ExtResource("4_q3gtr")]
 position = Vector2(595, 1541)
 
 [node name="DeepSeaPanic-assets-treasure-v01" type="Sprite2D" parent="."]

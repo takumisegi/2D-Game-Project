@@ -18,5 +18,8 @@ func _process(delta):
 		
 	position.x += direction * Speed * delta
 		
-		
 	move_and_slide()
+	
+	var entered = false
+	queue_free()
+	get_tree().change_scene_to_file
