@@ -81,6 +81,7 @@ text = "Start"
 script = SubResource("GDScript_2t62d")
 
 [node name="StartButton" type="Sprite2D" parent="Start Button"]
+texture_filter = 1
 position = Vector2(75, 31)
 scale = Vector2(0.0971616, 0.0971616)
 texture = ExtResource("3_ntm4v")
