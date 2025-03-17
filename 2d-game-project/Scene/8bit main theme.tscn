@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c57woqw0s20pd"]
+
+[ext_resource type="AudioStream" uid="uid://bmx5on54g6ohn" path="res://SFX/Jaws Theme - 8 bits.wav" id="1_uh4td"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_uh4td")
+autoplay = true

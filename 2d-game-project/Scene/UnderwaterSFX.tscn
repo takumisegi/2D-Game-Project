@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://l7necinmwyib"]
+
+[ext_resource type="AudioStream" uid="uid://cvqi4353d6adq" path="res://SFX/underwater-whale-and-diving-sound-ambient-116185.mp3" id="1_ieudy"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_ieudy")
+autoplay = true
