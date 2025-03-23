@@ -1,9 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://6itguqhpcbhy"]
+[gd_scene load_steps=4 format=3 uid="uid://6itguqhpcbhy"]
 
+[ext_resource type="Script" path="res://jellyfish movement.gd" id="1_222ap"]
 [ext_resource type="Texture2D" uid="uid://glnf02x6vhk2" path="res://icon.svg" id="1_i5s74"]
 
+[sub_resource type="GDScript" id="GDScript_61den"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_222ap")
 
 [node name="Icon" type="Sprite2D" parent="."]
 scale = Vector2(0.828125, 0.828125)
 texture = ExtResource("1_i5s74")
+script = SubResource("GDScript_61den")
+
+[node name="ray_up" type="RayCast2D" parent="."]
+target_position = Vector2(0, -134)
+
+[node name="ray_down" type="RayCast2D" parent="."]
+target_position = Vector2(0, 134)
