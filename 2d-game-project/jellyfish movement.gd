@@ -1,20 +1,17 @@
 extends CharacterBody2D
 
-@onready var ray_up = $RayCast2D_Up
-@onready var ray_down = $RayCast2D_Down
-@onready var jellyfish_sprite = $Icon
-
-var speed = 100
+var speed = 100  # Movement speed
+var min_y = 200  # Upper boundary
+var max_y = 400  # Lower boundary
 var direction = 1  # 1 for moving down, -1 for moving up
 
-func _process(delta):
-	# If ray detects a collision, change direction
-	if direction == 1 and ray_down.is_colliding():
+func _physics_process(delta):
+	# Change direction when reaching boundaries
+	if position.y >= max_y:
 		direction = -1
-		
-	elif direction == -1 and ray_up.is_colliding():
+	elif position.y <= min_y:
 		direction = 1
 
-	# Move up and down
+	# Apply movement
 	velocity.y = direction * speed
 	move_and_slide()

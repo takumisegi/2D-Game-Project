@@ -94,7 +94,7 @@ stream = ExtResource("7_jyibr")
 shape = SubResource("WorldBoundaryShape2D_3whgg")
 
 [node name="DeepSeaPanic-assets-treasure-v02" parent="." instance=ExtResource("8_n1gkw")]
-position = Vector2(546, 2253)
+position = Vector2(594, 2254)
 
 [node name="marine trench" parent="." instance=ExtResource("9_tv7dx")]
 position = Vector2(1, 656)
