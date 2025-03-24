@@ -28,7 +28,31 @@ position = Vector2(15.08, 186)
 scale = Vector2(1.3, 1.3)
 
 [node name="enemy fish" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
-position = Vector2(360, 568)
+position = Vector2(364, 534)
+player = NodePath("../Player")
+
+[node name="enemy fish2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(304, 1219)
+player = NodePath("../Player")
+
+[node name="enemy fish3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(714, 1378)
+player = NodePath("../Player")
+
+[node name="enemy fish5" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(547, 910)
+player = NodePath("../Player")
+
+[node name="enemy fish4" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(856, 647)
+player = NodePath("../Player")
+
+[node name="enemy fish6" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(870, 1929)
+player = NodePath("../Player")
+
+[node name="enemy fish7" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
+position = Vector2(367, 1913)
 player = NodePath("../Player")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
@@ -42,13 +66,22 @@ position = Vector2(6, -51)
 position = Vector2(861, 1429)
 
 [node name="jellyfish2" parent="." instance=ExtResource("4_ggma5")]
-position = Vector2(531, 1158)
+position = Vector2(533, 1158)
 
 [node name="jellyfish3" parent="." instance=ExtResource("4_ggma5")]
 position = Vector2(847, 1020)
 
+[node name="jellyfish6" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(650, 1889)
+
+[node name="jellyfish7" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(385, 1774)
+
 [node name="jellyfish4" parent="." instance=ExtResource("4_ggma5")]
 position = Vector2(318, 843)
+
+[node name="jellyfish8" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(435, 663)
 
 [node name="jellyfish5" parent="." instance=ExtResource("4_ggma5")]
 position = Vector2(399, 1481)
@@ -69,7 +102,7 @@ position = Vector2(601, 2201)
 scale = Vector2(0.0540066, 0.0540066)
 
 [node name="Player" parent="." instance=ExtResource("9_67mod")]
-position = Vector2(856, 479)
+position = Vector2(583, 488)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-281, -57)
