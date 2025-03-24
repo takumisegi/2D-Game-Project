@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://87haw57xuvor"]
+[gd_scene load_steps=6 format=3 uid="uid://87haw57xuvor"]
 
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="1_4y8fq"]
 [ext_resource type="PackedScene" uid="uid://drdjrot6b63ns" path="res://Scene/other fish.tscn" id="2_d7c8k"]
-[ext_resource type="PackedScene" uid="uid://6itguqhpcbhy" path="res://Scene/Jellyfish.tscn" id="3_4sw51"]
 [ext_resource type="PackedScene" uid="uid://bqkhxtgugyc8p" path="res://Scene/character_body_2d.tscn" id="4_1pegi"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0o55a"]
@@ -32,9 +31,6 @@ position = Vector2(6, -574)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sea Floor"]
 shape = SubResource("WorldBoundaryShape2D_487tn")
-
-[node name="CharacterBody2D2" parent="." instance=ExtResource("3_4sw51")]
-position = Vector2(748, 162)
 
 [node name="Player" parent="." instance=ExtResource("4_1pegi")]
 position = Vector2(473, 147)
