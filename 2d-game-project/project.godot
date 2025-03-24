@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://SFX/default_bus_layout.tres"
+
 [autoload]
 
 AudioStreamPlayer2d="*res://Scene/8bit main theme.tscn"

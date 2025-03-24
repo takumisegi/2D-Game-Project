@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqkhxtgugyc8p"]
 
 [ext_resource type="Script" path="res://Scripts/player_movement.gd" id="1_hothy"]
-[ext_resource type="Texture2D" uid="uid://cjxcd6iud6hs5" path="res://corp diver.png" id="2_eogrq"]
+[ext_resource type="Texture2D" uid="uid://cjxcd6iud6hs5" path="res://Assets/Ascii Art/corp diver.png" id="2_eogrq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxban"]
 animations = [{

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjxcd6iud6hs5"
-path="res://.godot/imported/corp diver.png-a5eced611d53c0851b9c05b2cf7892b5.ctex"
+path="res://.godot/imported/corp diver.png-678ead72b16e87f397cbbe19efed1dde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://corp diver.png"
-dest_files=["res://.godot/imported/corp diver.png-a5eced611d53c0851b9c05b2cf7892b5.ctex"]
+source_file="res://Assets/Ascii Art/corp diver.png"
+dest_files=["res://.godot/imported/corp diver.png-678ead72b16e87f397cbbe19efed1dde.ctex"]
 
 [params]
 
