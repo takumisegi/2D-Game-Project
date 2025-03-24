@@ -1,6 +1,10 @@
 [gd_resource type="AudioBusLayout" format=3 uid="uid://cmbpwatoox5mw"]
 
 [resource]
+<<<<<<< HEAD
+=======
+bus/0/volume_db = 1.06049
+>>>>>>> b0292193a9fbce2b3077e0dc533d6d77b7382c9a
 bus/0/volume_db = -21.8264
 bus/1/name = &"sfx"
 bus/1/solo = false
