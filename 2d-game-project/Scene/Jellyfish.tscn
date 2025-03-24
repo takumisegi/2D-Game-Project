@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://6itguqhpcbhy"]
 
 [ext_resource type="Script" path="res://Scripts/jellyfish movement.gd" id="1_p4fbt"]
-[ext_resource type="Texture2D" uid="uid://glnf02x6vhk2" path="res://icon.svg" id="2_jvehq"]
+[ext_resource type="Texture2D" uid="uid://17rerxy6g47f" path="res://Assets/Ascii Art/DeepSeaPanic-Level02-16.png" id="2_kuqq5"]
 
 [sub_resource type="GDScript" id="GDScript_61den"]
 script/source = "extends Sprite2D
@@ -18,19 +18,21 @@ func _process(delta: float) -> void:
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0sjha"]
-radius = 5.5
-height = 14.2
+radius = 4.7
+height = 11.2
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="jellyfish" type="CharacterBody2D"]
 position = Vector2(202, 177)
 script = ExtResource("1_p4fbt")
 
 [node name="Icon" type="Sprite2D" parent="."]
-scale = Vector2(0.828125, 0.828125)
-texture = ExtResource("2_jvehq")
+position = Vector2(4.48438, -4.48438)
+scale = Vector2(0.846063, 0.846063)
+texture = ExtResource("2_kuqq5")
 script = SubResource("GDScript_61den")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 6)
 scale = Vector2(10, 10)
 shape = SubResource("CapsuleShape2D_0sjha")
 
