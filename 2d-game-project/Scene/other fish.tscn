@@ -1,17 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://drdjrot6b63ns"]
+[gd_scene load_steps=3 format=3 uid="uid://drdjrot6b63ns"]
 
-[ext_resource type="Script" path="res://Scene/chase_fish.gd" id="1_mv5jf"]
-[ext_resource type="Texture2D" uid="uid://c5d4hmr13wlm3" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Fish-V01.png" id="2_d4fyj"]
+[ext_resource type="Texture2D" uid="uid://c5d4hmr13wlm3" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Fish-V01.png" id="1_el1r1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6mmbc"]
 height = 68.0001
 
 [node name="enemy fish" type="CharacterBody2D"]
-script = ExtResource("1_mv5jf")
 
 [node name="DeepSeaPanic-assets-fish-v01" type="Sprite2D" parent="."]
 position = Vector2(229, 210)
-texture = ExtResource("2_d4fyj")
+texture = ExtResource("1_el1r1")
 region_enabled = true
 region_rect = Rect2(202.61, 234.87, 79.39, 23.912)
 

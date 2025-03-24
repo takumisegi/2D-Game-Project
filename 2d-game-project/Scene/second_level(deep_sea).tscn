@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://87haw57xuvor"]
 
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="1_4y8fq"]
-[ext_resource type="PackedScene" uid="uid://drdjrot6b63ns" path="res://Scene/chase fish.tscn" id="2_d7c8k"]
+[ext_resource type="PackedScene" uid="uid://drdjrot6b63ns" path="res://Scene/other fish.tscn" id="2_d7c8k"]
 [ext_resource type="Texture2D" uid="uid://glnf02x6vhk2" path="res://icon.svg" id="4_yc1e0"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0o55a"]
@@ -16,9 +16,8 @@ height = 128.0
 [node name="second level(deep sea)" type="Node2D"]
 position = Vector2(0, 1)
 
-[node name="enemy fish" parent="." node_paths=PackedStringArray("target_to_chase") instance=ExtResource("2_d7c8k")]
+[node name="enemy fish" parent="." instance=ExtResource("2_d7c8k")]
 position = Vector2(598, 179)
-target_to_chase = NodePath("../CharacterBody2D")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 position = Vector2(-4, 134)
