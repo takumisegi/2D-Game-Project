@@ -1,13 +1,13 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqkhxtgugyc8p"]
 
-[ext_resource type="Texture2D" uid="uid://cy6uw56pskyvq" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Diver-Standing-V01.png" id="1_h7sy6"]
 [ext_resource type="Script" path="res://Scripts/player_movement.gd" id="1_hothy"]
+[ext_resource type="Texture2D" uid="uid://cjxcd6iud6hs5" path="res://corp diver.png" id="2_eogrq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxban"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_h7sy6")
+"texture": ExtResource("2_eogrq")
 }],
 "loop": true,
 "name": &"Idle",
@@ -26,6 +26,8 @@ height = 78.0
 script = ExtResource("1_hothy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -3)
+scale = Vector2(0.193662, 0.193662)
 sprite_frames = SubResource("SpriteFrames_uxban")
 animation = &"Idle"
 
