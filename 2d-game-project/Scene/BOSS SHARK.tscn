@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bomwvxsm8v8ge"]
 
-[ext_resource type="Script" path="res://BOSS SHARK.gd" id="1_2y1oa"]
+[ext_resource type="Script" path="res://Scripts/BOSS SHARK.gd" id="1_2y1oa"]
 [ext_resource type="Texture2D" uid="uid://t3tvj7gbw2dh" path="res://Assets/Ascii Art/DeepSeaPanic-Level02-15.png" id="2_qbw6t"]
 
 [node name="BOSS SHARK" type="CharacterBody2D"]

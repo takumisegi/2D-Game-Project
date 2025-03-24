@@ -38,7 +38,7 @@ position = Vector2(547, 910)
 player = NodePath("../Player")
 
 [node name="enemy fish7" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
-position = Vector2(385, 1643)
+position = Vector2(344, 1627)
 player = NodePath("../Player")
 
 [node name="enemy fish4" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
@@ -46,7 +46,7 @@ position = Vector2(856, 647)
 player = NodePath("../Player")
 
 [node name="enemy fish6" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_d7c8k")]
-position = Vector2(852, 1733)
+position = Vector2(831, 1728)
 player = NodePath("../Player")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
