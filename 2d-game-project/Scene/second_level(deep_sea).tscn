@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://6itguqhpcbhy" path="res://Scene/Jellyfish.tscn" id="4_ggma5"]
 [ext_resource type="Texture2D" uid="uid://dpjc0njf21ahx" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-SunV01.png" id="6_ifpyy"]
 [ext_resource type="Texture2D" uid="uid://ddjuhee00tkdh" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Duck-V01.png" id="7_hqyia"]
-[ext_resource type="PackedScene" path="res://Scene/treature_box.tscn" id="8_hr7ba"]
+[ext_resource type="PackedScene" uid="uid://i53ft1fd01av" path="res://Scene/treature_box.tscn" id="8_hr7ba"]
 [ext_resource type="PackedScene" uid="uid://bqkhxtgugyc8p" path="res://Scene/character_body_2d.tscn" id="9_67mod"]
 [ext_resource type="PackedScene" uid="uid://dtv84mvlsymov" path="res://Scene/shark left movement.tscn" id="9_f7ikc"]
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shark right movement.tscn" id="10_5f3s5"]
@@ -112,7 +112,7 @@ position = Vector2(225, 1886)
 position = Vector2(476, 1444)
 
 [node name="Player" parent="." instance=ExtResource("9_67mod")]
-position = Vector2(583, 490)
+position = Vector2(481, 389)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-281, -57)
+position = Vector2(-5, -164)
