@@ -1,17 +1,24 @@
 extends CharacterBody2D
 
-var speed = 100  # Movement speed
-var min_y = 200  # Upper boundary
-var max_y = 400  # Lower boundary
-var direction = 1  # 1 for moving down, -1 for moving up
+@export var speed = 2000.0  
+@export var move_range = 100.0  
+
+var direction = 1  
+var start_y  
+var min_y  
+var max_y 
+
+func _ready():
+	start_y = position.y
+	min_y = start_y - move_range / 2
+	max_y = start_y + move_range / 2
 
 func _physics_process(delta):
-	# Change direction when reaching boundaries
 	if position.y >= max_y:
 		direction = -1
 	elif position.y <= min_y:
 		direction = 1
 
-	# Apply movement
-	velocity.y = direction * speed
+	
+	velocity.y = direction * speed * delta
 	move_and_slide()

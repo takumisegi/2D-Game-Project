@@ -22,10 +22,11 @@ radius = 4.7
 height = 11.2
 
 [node name="jellyfish" type="CharacterBody2D"]
-position = Vector2(202, 177)
+position = Vector2(140, 147)
 script = ExtResource("1_p4fbt")
 
 [node name="Icon" type="Sprite2D" parent="."]
+texture_filter = 2
 position = Vector2(4.48438, -4.48438)
 scale = Vector2(0.846063, 0.846063)
 texture = ExtResource("2_kuqq5")
@@ -37,7 +38,8 @@ scale = Vector2(10, 10)
 shape = SubResource("CapsuleShape2D_0sjha")
 
 [node name="ray_up" type="RayCast2D" parent="."]
-target_position = Vector2(0, -134)
+target_position = Vector2(0, -60)
 
 [node name="ray_down" type="RayCast2D" parent="."]
-target_position = Vector2(0, 134)
+position = Vector2(-1, 4)
+target_position = Vector2(0, 60)

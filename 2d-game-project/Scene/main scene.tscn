@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://em385xqjon0t"]
+[gd_scene load_steps=14 format=3 uid="uid://em385xqjon0t"]
 
 [ext_resource type="PackedScene" uid="uid://7gwf3y32qlkr" path="res://Scene/deep_sea_panic_assets_boat_v_01.tscn" id="1_cctne"]
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_cn50l"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dtv84mvlsymov" path="res://Scene/shark left movement.tscn" id="9_0cjts"]
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="9_tv7dx"]
 [ext_resource type="Texture2D" uid="uid://ddjuhee00tkdh" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Duck-V01.png" id="10_hnkfo"]
+[ext_resource type="Texture2D" uid="uid://dpjc0njf21ahx" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-SunV01.png" id="11_uoi1m"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrlxq"]
 radius = 65.0077
@@ -125,3 +126,8 @@ texture_filter = 2
 position = Vector2(853, 546)
 scale = Vector2(0.914, 0.914)
 texture = ExtResource("10_hnkfo")
+
+[node name="DeepSeaPanic-assets-sunV01" type="Sprite2D" parent="."]
+position = Vector2(91, 96)
+scale = Vector2(0.756, 0.756)
+texture = ExtResource("11_uoi1m")
