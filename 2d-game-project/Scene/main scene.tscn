@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://em385xqjon0t"]
+[gd_scene load_steps=13 format=3 uid="uid://em385xqjon0t"]
 
 [ext_resource type="PackedScene" uid="uid://7gwf3y32qlkr" path="res://Scene/deep_sea_panic_assets_boat_v_01.tscn" id="1_cctne"]
 [ext_resource type="PackedScene" uid="uid://cb4g57fk6wotr" path="res://Scene/deep_sea_panic_assets_title_v_01.tscn" id="2_cn50l"]
@@ -6,15 +6,20 @@
 [ext_resource type="PackedScene" uid="uid://dy53xenth3aa4" path="res://Scene/shark right movement.tscn" id="4_q3gtr"]
 [ext_resource type="Texture2D" uid="uid://cafqpd7k76ns8" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Treasure-V01.png" id="6_y4toj"]
 [ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="7_jyibr"]
-[ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/deep_sea_panic_assets_treasure_v_01.tscn" id="8_n1gkw"]
+[ext_resource type="PackedScene" uid="uid://7vrwvxtgmtbr" path="res://Scene/treasure.tscn" id="8_n1gkw"]
 [ext_resource type="PackedScene" uid="uid://dtv84mvlsymov" path="res://Scene/shark left movement.tscn" id="9_0cjts"]
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="9_tv7dx"]
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://dpjc0njf21ahx" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-SunV01.png" id="10_uo057"]
+=======
+[ext_resource type="Texture2D" uid="uid://ddjuhee00tkdh" path="res://Assets/Ascii Art/DeepSeaPanic-Assets-Duck-V01.png" id="10_hnkfo"]
+>>>>>>> 88ee2f3875b8c2b7b4796334feb1da2f0ae328d8
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrlxq"]
 radius = 65.0077
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3whgg"]
-distance = -2333.0
+distance = -2328.0
 
 [node name="Main Scene" type="Node2D"]
 
@@ -93,7 +98,7 @@ stream = ExtResource("7_jyibr")
 shape = SubResource("WorldBoundaryShape2D_3whgg")
 
 [node name="DeepSeaPanic-assets-treasure-v02" parent="." instance=ExtResource("8_n1gkw")]
-position = Vector2(546, 2253)
+position = Vector2(594, 2254)
 
 [node name="marine trench" parent="." instance=ExtResource("9_tv7dx")]
 position = Vector2(1, 656)
@@ -118,3 +123,15 @@ position = Vector2(144, 1051)
 
 [node name="Shark6" parent="." instance=ExtResource("9_0cjts")]
 position = Vector2(420, 1154)
+
+<<<<<<< HEAD
+[node name="DeepSeaPanic-assets-sunV01" type="Sprite2D" parent="."]
+position = Vector2(181, 122)
+texture = ExtResource("10_uo057")
+=======
+[node name="DeepSeaPanic-assets-duck-v01" type="Sprite2D" parent="."]
+texture_filter = 2
+position = Vector2(853, 546)
+scale = Vector2(0.914, 0.914)
+texture = ExtResource("10_hnkfo")
+>>>>>>> 88ee2f3875b8c2b7b4796334feb1da2f0ae328d8
