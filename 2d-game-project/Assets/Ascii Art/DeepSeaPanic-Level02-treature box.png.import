@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw5o05jw8upx5"
-path="res://.godot/imported/treature box.png-d565f153751be60a0432a044bfb63d70.ctex"
+path="res://.godot/imported/DeepSeaPanic-Level02-treature box.png-5e0660ddb443f8ad1ba643d7d8b07435.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ascii Art/treature box.png"
-dest_files=["res://.godot/imported/treature box.png-d565f153751be60a0432a044bfb63d70.ctex"]
+source_file="res://Assets/Ascii Art/DeepSeaPanic-Level02-treature box.png"
+dest_files=["res://.godot/imported/DeepSeaPanic-Level02-treature box.png-5e0660ddb443f8ad1ba643d7d8b07435.ctex"]
 
 [params]
 

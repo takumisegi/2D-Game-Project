@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://87haw57xuvor"]
+[gd_scene load_steps=7 format=3 uid="uid://87haw57xuvor"]
 
 [ext_resource type="PackedScene" uid="uid://yds2nwli1bpe" path="res://Scene/marine_trench.tscn" id="1_4y8fq"]
 [ext_resource type="PackedScene" uid="uid://drdjrot6b63ns" path="res://Scene/other fish.tscn" id="2_d7c8k"]
+[ext_resource type="PackedScene" uid="uid://6itguqhpcbhy" path="res://Scene/Jellyfish.tscn" id="4_ggma5"]
 [ext_resource type="Texture2D" uid="uid://glnf02x6vhk2" path="res://icon.svg" id="4_yc1e0"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0o55a"]
@@ -35,3 +36,15 @@ shape = SubResource("CapsuleShape2D_bf2f4")
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(457, 307)
 texture = ExtResource("4_yc1e0")
+
+[node name="jellyfish" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(856, 1421)
+
+[node name="jellyfish2" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(362, 1251)
+
+[node name="jellyfish3" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(746, 937)
+
+[node name="jellyfish4" parent="." instance=ExtResource("4_ggma5")]
+position = Vector2(496, 618)

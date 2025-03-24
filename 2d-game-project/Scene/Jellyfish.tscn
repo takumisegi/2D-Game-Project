@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://6itguqhpcbhy"]
 
 [ext_resource type="Script" path="res://Scripts/jellyfish movement.gd" id="1_p4fbt"]
-[ext_resource type="Texture2D" uid="uid://17rerxy6g47f" path="res://Assets/Ascii Art/DeepSeaPanic-Level02-16.png" id="2_kuqq5"]
+[ext_resource type="Texture2D" uid="uid://17rerxy6g47f" path="res://Assets/Ascii Art/DeepSeaPanic-Level02-jellyfish1.png" id="2_kuqq5"]
 
 [sub_resource type="GDScript" id="GDScript_61den"]
 script/source = "extends Sprite2D

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://17rerxy6g47f"
-path="res://.godot/imported/DeepSeaPanic-Level02-16.png-0987bcc6e52984b21a9b9aace5fff767.ctex"
+uid="uid://dx0o6f3vs16q0"
+path="res://.godot/imported/DeepSeaPanic-Level02-jellyfish2.png-5f0d23f64cbda0032cfd25b206a34f00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ascii Art/DeepSeaPanic-Level02-16.png"
-dest_files=["res://.godot/imported/DeepSeaPanic-Level02-16.png-0987bcc6e52984b21a9b9aace5fff767.ctex"]
+source_file="res://Assets/Ascii Art/DeepSeaPanic-Level02-jellyfish2.png"
+dest_files=["res://.godot/imported/DeepSeaPanic-Level02-jellyfish2.png-5f0d23f64cbda0032cfd25b206a34f00.ctex"]
 
 [params]
 
