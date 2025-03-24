@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://i1jnds3y3aoh"]
+
+[ext_resource type="PackedScene" uid="uid://bqkhxtgugyc8p" path="res://Scene/character_body_2d.tscn" id="1_hgq1l"]
+[ext_resource type="PackedScene" uid="uid://drdjrot6b63ns" path="res://Scene/other fish.tscn" id="2_4ogxc"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_rpimd"]
+vertices = PackedVector2Array(1028.84, 112.57, 1115.61, 398.633, 505.297, 605, -2.64844, 285.32, 60.9766, 10.8281, 730.219, -2.95312)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(53, 1, 732, -13, 1037, 105, 1128, 405, 504, 616, -14, 290)])
+
+[node name="fish follow path" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_hgq1l")]
+position = Vector2(484, 433)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(92, -109)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+position = Vector2(0, 41)
+navigation_polygon = SubResource("NavigationPolygon_rpimd")
+
+[node name="other fish" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_4ogxc")]
+player = NodePath("../Player")
