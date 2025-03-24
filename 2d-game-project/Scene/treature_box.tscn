@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://i53ft1fd01av"]
+[gd_scene load_steps=5 format=3 uid="uid://i53ft1fd01av"]
 
 [ext_resource type="Texture2D" uid="uid://bw5o05jw8upx5" path="res://Assets/Ascii Art/DeepSeaPanic-Level02-treature box.png" id="1_8ndli"]
 [ext_resource type="AudioStream" uid="uid://bga4odgprygtd" path="res://SFX/diamond-found-190255.mp3" id="2_omdt7"]
+[ext_resource type="Script" path="res://Scripts/treature_box.gd" id="2_or27s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hbr2i"]
 size = Vector2(2668.18, 1921.49)
@@ -9,6 +10,7 @@ size = Vector2(2668.18, 1921.49)
 [node name="DeepSeaPanic-level02-treatureBox" type="Sprite2D"]
 scale = Vector2(0.100443, 0.100443)
 texture = ExtResource("1_8ndli")
+script = ExtResource("2_or27s")
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -18,3 +20,5 @@ shape = SubResource("RectangleShape2D_hbr2i")
 
 [node name="DiamondSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_omdt7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
